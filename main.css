@@ -1,0 +1,84 @@
+body{
+    background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.grid-input
+{
+    display: grid;
+    grid-template-columns: auto;
+    padding:1% 10% 0% 10%;
+}
+
+input{
+    padding: 2%;
+    font-size: 15px;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 3% 10% 3% 10%;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)
+    }
+.btn{
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   font-size: 15px;
+   background-size: 200% auto;
+   color: white;  
+   cursor: pointer;          
+   border: 2px solid white;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ @media screen and (max-width: 768px) {
+    .grid-input
+        {
+            display: grid;
+            grid-template-columns: auto;
+        }
+    .grid
+        {
+            display: grid;
+            grid-template-columns: auto;
+        }
+    .center{
+        text-align: center !important;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .grid-input
+        {
+            display: grid;
+            grid-template-columns: auto;
+        }
+    .grid
+        {
+            display: grid;
+            grid-template-columns: auto;
+        }
+    .center{
+        text-align: center !important;
+    }
+    .space{
+        padding: 0% !important;
+    }
+  }
